@@ -1,0 +1,572 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+    font-family: Muli-regular;
+    src: url('../fonts/Muli-regular/Muli-regular-Regular.ttf');
+}
+
+@font-face {
+    font-family: Muli-regular;
+    src: url('../fonts/Muli/Muli-Regular.ttf');
+}
+
+@font-face {
+    font-family: Muli-bold;
+    src: url('../fonts/Muli/Muli-Bold.ttf');
+}
+
+@font-face {
+    font-family: Muli-medium;
+    src: url('../fonts/Muli/Muli-Medium.ttf');
+}
+
+@font-face {
+    font-family: Muli-black;
+    src: url('../fonts/Muli/Muli-Black.ttf');
+}
+
+@font-face {
+    font-family: Noto-regular;
+    src: url('../fonts/Noto_Sans_TC/NotoSansTC-Regular.otf');
+}
+
+/* colors
+  f37748 light orange
+  f9cb3e yellow
+  f96c3e dark orange
+  ff919c pink
+  */
+
+/*//////////////////////////////////////////////////////////////////
+  [ RESTYLE TAG ]*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
+    position: relative;
+    font-family: Muli-regular, sans-serif !important;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #222222;
+    line-height: 1.2em;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+body>section>div>div>div>h1 {
+    font-family: MuliBold, sans-serif
+}
+
+ul {
+    padding: 0;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.default-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: #fff;
+    width: 100% !important;
+    box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+}
+
+.menutop-wrap {
+    background-color: #f9f9ff;
+    max-height: 54px;
+}
+
+.menutop-wrap .menu-top .list li {
+    padding: 15px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: MuliBold, sans-serif;
+}
+
+.menutop-wrap a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #222;
+    text-transform: uppercase;
+    font-family: MuliBold, sans-serif;
+
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menutop-wrap a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 462px) {
+    .menutop-wrap a {
+        font-size: 8px;
+        padding: 5px 0px;
+    }
+}
+
+.menu-top li {
+    display: inline-block;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.menu-top li:hover {
+    background-color: #f37748;
+}
+
+.navbar {
+    max-height: auto;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        height: auto;
+        max-height: 400px;
+        overflow-x: hidden;
+    }
+}
+
+.navbar-nav a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+    padding: 20px;
+    font-family: MuliBold, sans-serif;
+
+}
+
+.navbar-nav a:hover {
+    color: #f37748;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        margin-top: 10px;
+    }
+
+    .navbar-nav a {
+        padding: 0;
+    }
+
+    .navbar-nav li {
+        padding: 15px 0;
+    }
+}
+
+.navbar-logo {
+    max-width: 40px;
+}
+
+.p1-gradient-bg,
+.primary-btn2,
+.primary-btn2.primary-border:hover,
+.banner-area,
+.category-area .content .content-overlay,
+.men-product-area .overlay-bg,
+.bottom,
+.countdown-area .view-btn:hover,
+.single-footer-widget .click-btn,
+.generic-banner,
+.top-section-area,
+.details-tab-navigation .nav-link:hover,
+.details-tab-navigation .nav-link.active,
+.quick-view-carousel-details .owl-controls .owl-dots .owl-dot.active:after,
+.organic-body .quick-view-carousel .owl-controls .owl-dots .owl-dot.active:after,
+.organic-body .organic,
+.organic-body .organic:hover,
+.checkput-login .top-title,
+.register-form,
+.mini-cart-2a.mini-cart-1 .mini-border,
+.mini-cart-2a.mini-cart-2 .mini-border,
+.mini-cart-2a.mini-cart-3 .mini-border,
+.mini-cart-2a.mini-cart-4 .mini-border,
+.mini-cart.mini-cart-1 .mini-border,
+.mini-cart.mini-cart-2 .mini-border,
+.mini-cart.mini-cart-3 .mini-border,
+.mini-cart.mini-cart-4 .mini-border,
+.item-cart,
+.submit-btn,
+.submit-btn.color-1,
+.submit-btn.color-2,
+.submit-btn.color-3,
+.submit-btn.color-4,
+.view-btn.color-1:after,
+.view-btn.color-2:after,
+.view-btn.color-3:after,
+.view-btn.color-4:after,
+.organic-section-title-left .carousel-trigger .prev-trigger:after,
+.organic-section-title-left .carousel-trigger .next-trigger:after,
+.single-search-product:before,
+.single-organic-product:after,
+.single-organic-product .bottom,
+.single-organic-product:hover .discount,
+.single-furniture-product .bottom,
+.single-furniture-product:hover .discount,
+.single-sidebar-product:before,
+.organic-breadcrumb,
+.grid-btn:hover,
+.list-btn:hover,
+.grid-btn.active,
+.list-btn.active,
+.pagination a.active,
+.pagination a:hover,
+.single-organic-product-list:after {
+    background: -webkit-linear-gradient(45deg, #f37748 0%, #ff919c 100%);
+
+}
+
+@media (max-width: 767px) {
+    .banner-area .fullscreen {
+        height: 700px !important;
+    }
+}
+
+.breadcrumb-banner {
+    padding: 30px 0 50px 0;
+}
+
+
+.breadcrumb-banner h1 {
+    font-weight: 600;
+    color: #fff;
+}
+
+
+.breadcrumb-banner p {
+    margin-bottom: 0;
+    color: #fff;
+}
+
+
+.breadcrumb-banner nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: end;
+    -moz-justify-content: end;
+    justify-content: end;
+}
+
+
+.breadcrumb-banner nav a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+.breadcrumb-banner nav a i {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+.breadcrumb-banner .col-first {
+    margin-top: 20px;
+    width: 38%;
+    padding-right: 15px;
+}
+
+@media (max-width: 991px) {
+    .breadcrumb-banner .col-first {
+        width: 40%;
+    }
+}
+
+@media (max-width: 991px) {
+    .breadcrumb-banner .col-first {
+        width: 100%;
+        border-right: none;
+    }
+}
+
+
+.breadcrumb-banner .col-first nav {
+    margin-top: 20px;
+}
+
+
+.breadcrumb-banner .col-second {
+    margin-top: 20px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 991px) {
+    .breadcrumb-banner .col-second {
+        width: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+    .breadcrumb-banner .col-second {
+        width: 100%;
+    }
+}
+
+
+.breadcrumb-banner .col-third {
+    margin-top: 20px;
+    width: 27%;
+}
+
+
+
+@media (max-width: 991px) {
+    .breadcrumb-banner .col-third {
+        width: 100%;
+    }
+}
+
+/* footer */
+.footer-area {
+    padding-top: 100px;
+    background-color: #222222;
+}
+
+/* line 652, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.footer-area h6 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section-gap {
+    padding: 100px 0;
+}
+
+
+
+.single-footer-widget .click-btn {
+    color: #fff;
+    border-radius: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 8px 12px;
+    border: 0;
+
+}
+
+.single-footer-widget input {
+    border: none;
+    width: 80% !important;
+    font-weight: 300;
+    background: #191919;
+    color: #777;
+    padding-left: 20px;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+/* line 712, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.single-footer-widget input:focus {
+    background-color: #191919;
+}
+
+/* line 719, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.single-footer-widget .bb-btn {
+    color: #fff;
+    font-weight: 300;
+    border-radius: 0;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+/* line 730, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.single-footer-widget .info {
+    position: absolute;
+    margin-top: 20%;
+    color: #fff;
+    font-size: 12px;
+}
+
+/* line 735, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.single-footer-widget .info.valid {
+    color: green;
+}
+
+/* line 738, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.single-footer-widget .info.error {
+    color: red;
+}
+
+/* line 744, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.single-footer-widget .click-btn {
+    color: #fff;
+    border-radius: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 8px 12px;
+    border: 0;
+}
+
+/* line 754, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.single-footer-widget ::-moz-selection {
+    /* Code for Firefox */
+    background-color: #191919 !important;
+    color: #777777;
+}
+
+/* line 758, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.single-footer-widget ::selection {
+    background-color: #191919 !important;
+    color: #777777;
+}
+
+/* line 762, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.single-footer-widget ::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #777777;
+    font-weight: 300;
+}
+
+/* line 766, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.single-footer-widget :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #777777;
+    opacity: 1;
+    font-weight: 300;
+}
+
+/* line 771, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.single-footer-widget ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #777777;
+    opacity: 1;
+    font-weight: 300;
+}
+
+/* line 776, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.single-footer-widget :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #777777;
+    font-weight: 300;
+}
+
+/* line 780, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.single-footer-widget ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #777777;
+    font-weight: 300;
+}
+
+@media (max-width: 991px) {
+
+    /* line 702, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+    .single-footer-widget {
+        margin-bottom: 30px;
+    }
+}
+
+.instafeed {
+    margin: -5px;
+}
+
+.instafeed li {
+    overflow: hidden;
+    width: 25%;
+}
+
+.instafeed li img {
+    margin: 5px;
+}
+
+.footer-social a {
+    padding-right: 25px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-social i {
+    color: #cccccc;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 991px) {
+    .footer-social {
+        text-align: left;
+    }
+}

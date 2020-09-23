@@ -1,0 +1,434 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+  font-family: Muli-regular;
+  src: url('../fonts/Muli-regular/Muli-regular-Regular.ttf');
+}
+
+@font-face {
+  font-family: Muli-regular;
+  src: url('../fonts/Muli/Muli-Regular.ttf');
+}
+
+@font-face {
+  font-family: Muli-bold;
+  src: url('../fonts/Muli/Muli-Bold.ttf');
+}
+
+@font-face {
+  font-family: Muli-medium;
+  src: url('../fonts/Muli/Muli-Medium.ttf');
+}
+
+@font-face {
+  font-family: Muli-black;
+  src: url('../fonts/Muli/Muli-Black.ttf');
+}
+
+@font-face {
+  font-family: Noto-regular;
+  src: url('../fonts/Noto_Sans_TC/NotoSansTC-Regular.otf');
+}
+
+/* colors
+f37748 light orange
+f9cb3e yellow
+f96c3e dark orange
+ff919c pink
+*/
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Muli-regular, sans-serif;
+}
+
+/*---------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+/*---------------------------------------------*/
+input {
+  outline: none;
+  border: none;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+label {
+  margin: 0;
+  display: block;
+}
+
+/*---------------------------------------------*/
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.go-back-home-btn {
+  color: white;
+  font-size: 16px;
+  transition: all .4s;
+}
+
+.go-back-home-btn:hover {
+  transform: scale(1.2);
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Utility ]*/
+.container-forgot {
+  text-align: center;
+}
+
+.forgot {
+  font-family: Muli-regular, sans-serif;
+  font-size: 14px;
+  color: white;
+  line-height: 1.5;
+  transition: all 0.4s;
+  text-decoration: none;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]*/
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-login {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.container-login::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-linear-gradient(top,
+      rgba(243, 119, 72, 0.7),
+      rgba(249, 203, 62, 0.7));
+  background: -webkit-linear-gradient(45deg, rgba(243, 119, 72, 0.7) 0%, rgba(255, 145, 156, .7) 45%, rgba(249, 203, 62, 0.7) 100%);
+
+}
+
+.wrap-login {
+  width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 55px 55px 37px 55px;
+  background: -webkit-linear-gradient(45deg, #f37748 0%, #ff919c 45%, #f9cb3e 100%);
+  /* background: -webkit-linear-gradient(top, #f37748, #f9cb3e); */
+}
+
+/*------------------------------------------------------------------
+[ Form ]*/
+
+.login-form {
+  width: 100%;
+}
+
+.login-form-logo {
+  font-size: 60px;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.login-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 10%;
+  max-width: 150px;
+}
+
+.login-form-title {
+  font-family: Muli-bold, sans-serif;
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: none;
+  display: block;
+  padding-bottom: 34px;
+  padding-top: 27px;
+  /* border-bottom: 1px solid white; */
+}
+
+.login-form-title-member {
+  font-family: Muli-bold, sans-serif;
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: none;
+  display: block;
+  padding-bottom: 34px;
+  padding-top: 0px;
+}
+
+.login-link {
+  text-decoration: none;
+  color: #f96c3e;
+  font-size: 1.5em;
+  font-weight: bolder;
+  transition: all .4s;
+}
+
+.login-link:hover {
+  transform: scale(1.2);
+}
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 30px;
+}
+
+.input100 {
+  font-family: Noto-regular, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  padding: 0 5px 0 38px;
+}
+
+/*---------------------------------------------*/
+.focus-input100 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input100::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.4s;
+  background: #fff;
+}
+
+.focus-input100::after {
+  font-family: Material-Design-Iconic-Font;
+  font-size: 22px;
+  color: #fff;
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 6px;
+  left: 0px;
+  padding-left: 5px;
+  transition: all 0.4s;
+}
+
+/* =================================================
+This will move icon 22px to to when input is focused 
+================================================= */
+
+.input100:focus {
+  padding-left: 5px;
+}
+
+.input100:focus+.focus-input100::after {
+  top: -22px;
+  font-size: 18px;
+}
+
+.input100:focus+.focus-input100::before {
+  width: 100%;
+}
+
+.has-val.input100+.focus-input100::after {
+  top: -22px;
+  font-size: 18px;
+}
+
+.has-val.input100+.focus-input100::before {
+  width: 100%;
+}
+
+.has-val.input100 {
+  padding-left: 5px;
+}
+
+/*==================================================================
+[ Custom checkbox ]*/
+
+.contact100-form-checkbox {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 35px;
+}
+
+.input-checkbox100 {
+  display: none;
+}
+
+.label-checkbox100 {
+  font-family: Noto-regular, sans-serif;
+  font-size: 13px;
+  color: #fff;
+  line-height: 1.2;
+  display: block;
+  position: relative;
+  padding-left: 26px;
+  cursor: pointer;
+}
+
+.label-checkbox100::before {
+  content: '\f26b';
+  font-family: Material-Design-Iconic-Font;
+  font-size: 13px;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  background: #fff;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-checkbox100:checked+.label-checkbox100::before {
+  color: #f37748;
+}
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-login-form-btn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.login-form-btn {
+  font-family: Muli-black, sans-serif;
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 120px;
+  height: 50px;
+  border-radius: 10px;
+  background: #f37748;
+  background: -webkit-linear-gradient(45deg, #f37748 0%, #ff919c 45%, #f9cb3e 100%);
+  position: relative;
+  z-index: 1;
+  transition: all 0.4s;
+}
+
+.login-form-btn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  opacity: 1;
+
+  transition: all 0.4s;
+}
+
+.login-form-btn:hover {
+  color: #fff;
+}
+
+.login-form-btn:hover:before {
+  opacity: 0;
+}
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 576px) {
+  .wrap-login {
+    padding: 55px 15px 37px 15px;
+  }
+}

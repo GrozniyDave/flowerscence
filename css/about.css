@@ -1,0 +1,23 @@
+.about-main-image {
+    height: 500px;
+    object-fit: cover;
+}
+
+.about-social i {
+    color: #f37748;
+    margin: 0 1em;
+}
+
+.about-header {
+    font-family: Muli-Black, sans-serif;
+    font-size: 3rem;
+    background: -webkit-linear-gradient(45deg, #f37748 0%, #ff919c 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.about-paragraph {
+    line-height: 2;
+}

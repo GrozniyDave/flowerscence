@@ -1,0 +1,29 @@
+.submit-btn-form {
+    border: 0px;
+    cursor: pointer;
+    margin-top: 10px;
+    line-height: 40px;
+    padding: 0 40px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 2.828px 2.828px 15px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 3px;
+    position: relative;
+    float: right;
+    transition: all 0.3s ease;
+
+}
+
+
+.submit-btn-form:hover {
+    background: -webkit-linear-gradient(45deg, #f37748 0%, #ff919c 100%);
+    color: white;
+
+}
+
+.font-weight-bold {
+    font-family: Muli-Bold, sans-serif
+}

@@ -1,0 +1,487 @@
+html,
+body {
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: #0a183d;
+    font-weight: 600;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 15px;
+    color: #6a7080;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+    outline: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 60px;
+}
+
+.set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.spad {
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a {
+    color: #fff;
+}
+
+/* buttons */
+
+.site-btn {
+    display: inline-block;
+    line-height: 40px;
+    padding: 10px 40px;
+    text-align: center;
+    box-shadow: 2.828px 2.828px 15px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 3px;
+    position: relative;
+    background: #f37748;
+    color: #fff;
+}
+
+.site-btn:hover {
+    color: #f37748;
+    background-color: #fff;
+}
+
+.site-btn.sb-c2 {
+    background: #fff;
+    color: #f37748;
+}
+
+
+/*------------------
+Hero section
+ ---------------------*/
+.landing-paragraph {
+    font-family: Muli-Bold, sans serif;
+    font-size: 20px;
+    color: #f37748;
+}
+
+.landing-heading {
+    font-family: Muli-Black, sans serif;
+    font-size: 32px;
+    background: -webkit-linear-gradient(45deg, #f37748 0%, #ff919c 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.hero-section {
+    overflow: hidden;
+}
+
+.hs-item {
+    height: 50vh;
+    padding-bottom: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: url('../images/hero-banner4.jpeg');
+    object-fit: cover;
+}
+
+.hs-item h2 {
+    color: #fff;
+    font-size: 70px;
+    margin-bottom: 25px;
+    line-height: 0.9;
+    position: relative;
+    top: 50px;
+    opacity: 0;
+}
+
+.hs-item h2 span {
+    color: #f37748;
+}
+
+.hs-item p {
+    color: #ee8a66;
+    opacity: 1;
+    font-size: 24px;
+    margin-bottom: 50px;
+    position: relative;
+    top: 50px;
+    opacity: 0;
+}
+
+.hs-item .site-btn {
+    font-size: 1.05em;
+    border: 0px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.hs-item .sb-c2 {
+    margin-left: 8px;
+}
+
+.hs-item .hs-text {
+    padding-top: 90px;
+    max-width: 475px;
+    font-family: Muli-Black, sans-serif;
+}
+
+.hr-img img {
+    min-width: 602px;
+    position: relative;
+    left: -34px;
+    top: 50px;
+    opacity: 0;
+}
+
+.owl-item.active .hs-item img,
+.owl-item.active .hs-item h2,
+.owl-item.active .hs-item p,
+.owl-item.active .hs-item .site-btn,
+.owl-item.active .hs-item .site-btn.sb-c2 {
+    top: 0;
+    opacity: 1;
+}
+
+.owl-item.active .hs-item img {
+    -webkit-transition: all 0.5s ease 0.2s;
+    transition: all 0.5s ease 0.2s;
+}
+
+.owl-item.active .hs-item h2 {
+    -webkit-transition: all 0.5s ease 0.4s;
+    transition: all 0.5s ease 0.4s;
+}
+
+.owl-item.active .hs-item p {
+    -webkit-transition: all 0.5s ease 0.6s;
+    transition: all 0.5s ease 0.6s;
+}
+
+.owl-item.active .hs-item .site-btn {
+    -webkit-transition: all 0.5s ease 0.8s;
+    transition: all 0.5s ease 0.8s;
+}
+
+.owl-item.active .hs-item .site-btn.sb-c2 {
+    -webkit-transition: all 0.5s ease 1s;
+    transition: all 0.5s ease 1s;
+}
+
+
+
+
+/* ----------------
+How section
+ -------------------*/
+
+.how-section {
+    background: -webkit-linear-gradient(45deg, #f37748 0%, #ff919c 100%);
+}
+
+.how-item .hi-icon {
+    position: relative;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    background: black;
+    margin-bottom: 25px;
+}
+
+.how-item .hi-icon img {
+    position: absolute;
+    right: -8px;
+    bottom: 0;
+}
+
+.how-item h4 {
+    margin-bottom: 25px;
+}
+
+.how-item p {
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+/* ----------------
+Concept section
+ -------------------*/
+
+.concept-section p {
+    padding-top: 5px;
+}
+
+.concept-item {
+    text-align: center;
+    padding-top: 35px;
+}
+
+.concept-item img {
+    border-radius: 40px;
+    margin-bottom: 15px;
+}
+
+
+/* ----------------
+Premium section 
+ -------------------*/
+
+.premium-section p {
+    margin-bottom: 50px;
+}
+
+.premium-item {
+    text-align: center;
+    padding-top: 35px;
+}
+
+.premium-item img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.premium-item h4 {
+    margin-bottom: 4px;
+}
+
+.premium-item p {
+    margin-bottom: 0;
+}
+
+/* ----------------
+Responsive
+ -------------------*/
+
+.footer-section {
+    background: -webkit-linear-gradient(45deg, #f37748 0%, #ff919c 100%);
+    padding: 100px 0 85px;
+}
+
+.footer-widget {
+    padding-top: 2px;
+}
+
+.footer-widget h2 {
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.footer-widget ul {
+    list-style: none;
+}
+
+.footer-widget ul li a {
+    display: inline-block;
+    color: #6a7080;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #505565;
+    padding: 10px 0 25px;
+}
+
+.social-links a {
+    display: inline-block;
+    color: #6a7080;
+    font-size: 18px;
+    margin-right: 35px;
+}
+
+.content {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* line 418, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.content .content-overlay {
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+/* line 431, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.content:hover .content-overlay {
+    /* opacity: .5; */
+
+}
+
+.content:hover {
+    transform: scale(1.2);
+    transition: all .2s;
+}
+
+/* line 436, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.content-image {
+    width: 100%;
+}
+
+/* line 440, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+/* line 459, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.fadeIn-bottom {
+    left: 80%;
+}
+
+.bottom {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+/* line 472, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.bottom a {
+    display: inline-block;
+    width: 25%;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* line 477, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.bottom a span {
+    color: #fff;
+}
+
+/* line 480, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.bottom a:hover {
+    background: #fff;
+    box-shadow: 2.828px 2.828px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* line 481, /Applications/MAMP/htdocs/1.monthy projects/29.Shop/scss/theme/_home.scss */
+.bottom a:hover span {
+    color: #222222;
+}
+
+.img-thumbnail {
+    height: 300px;
+    object-fit: cover !important;
+}
